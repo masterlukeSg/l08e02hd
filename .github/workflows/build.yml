@@ -44,8 +44,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/ase/hello-docker .
+          docker build -t ghcr.io/${{ github.repository }}/ase/hello_docker .
 
       - name: Push Docker image
         run: |
-          docker push ghcr.io/${{ github.repository }}/ase/hello-docker:latest
+          docker push ghcr.io/${{ github.repository }}/ase/hello_docker:latest
